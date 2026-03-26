@@ -22,7 +22,7 @@ const Navber = () => {
                             {link}
                         </ul>
                     </div>
-                    <Link to="/home" className='text-[#7A42E9] text-lg font-bold'><img src={logoimage} className='h-10 w-10 inline'  alt="" /> App World</Link>
+                    <Link to="/home" className='text-[#7A42E9] text-lg font-bold'><img src={logoimage} className='h-10 w-10 inline'  alt="" /> <span className='lg:inline hidden'>App World</span></Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
