@@ -1,16 +1,22 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { addInstallApp } from '../../utilites/addToDB';
 
 const AppDetails = () => {
+    // const [disabled, setDisabled] = useState(false)
     const {id} = useParams()
     const allApp = useLoaderData()
     const appId = parseInt(id)
     const App = allApp.find(singleApp =>(singleApp.id === appId))
     const { companyName, image, title,  description, size, reviews, ratingAvg, downloads} = App
-
     
     
+    const handleInstall = (id)=>{
+        addInstallApp(id);
+    }
+    
 
+    
     return (
         <div className='my-6 bg-gray-300'>
             <div className='flex'>
@@ -33,7 +39,7 @@ const AppDetails = () => {
                         </div>
                     </div>
                     <div className='mt-10 '>
-                        <button  className="btn btn-success text-white ">Install ({size} MB) </button>
+                        <button onClick={()=>handleInstall(id)} className="btn btn-success text-white ">Install ({size} MB) </button>
                     </div>
                 </div>
                 
