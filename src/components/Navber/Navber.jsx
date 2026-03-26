@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import logoimage from '../../assets/logo.png'
 const Navber = () => {
     const link = [
-        <Link to="/home"  className='me-4 focus:text-[#7A42E9] lg:focus:border-b lg:focus:border-[#7A42E9] hover:text-[#7A42E9] lg:hover:border-b-1 lg:hover:border-[#7A42E9]' ><li>Home</li></Link>,
+        <Link to="/"  className='me-4 focus:text-[#7A42E9] lg:focus:border-b lg:focus:border-[#7A42E9] hover:text-[#7A42E9] lg:hover:border-b-1 lg:hover:border-[#7A42E9]' ><li>Home</li></Link>,
         <Link to="/app"  className='me-4 focus:text-[#7A42E9] lg:focus:border-b lg:focus:border-[#7A42E9] hover:text-[#7A42E9] lg:hover:border-b-1 lg:hover:border-[#7A42E9]' ><li>App Page</li></Link>,
         <Link to="/installation"  className='me-4 focus:text-[#7A42E9] lg:focus:border-b lg:focus:border-[#7A42E9] hover:text-[#7A42E9] lg:hover:border-b-1 lg:hover:border-[#7A42E9]' ><li>Installation</li></Link>
 
